@@ -1,0 +1,3 @@
+Número de Viagens já realizadas: 0
+Número de Clientes registados: 2
+Total Encaixado: 0.0

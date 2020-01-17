@@ -1,0 +1,738 @@
+html,
+body,
+.container-fluid {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	overflow: auto;
+	background-color: white;
+	font-family: 'Catamaran', sans-serif;
+	font-size: 14px;
+}
+
+p{
+  font-size: 300;
+  color:white;
+
+}
+.scorecardgraph{
+	background-color: white;
+}
+.table{
+	background-color: white;
+}
+
+.scorecardminado{
+	background-color: white;
+}
+
+input[type=radio] {
+	margin-left: 20px;
+}
+.rolebar .navbar-collapse{
+	background-color: #109877;
+	border-radius: 10px;
+	border: none;
+
+}
+
+.scorecardSubmit {
+}
+
+.rolebar .navbar-collapse a{
+	color:white;
+	padding-left: 22px;
+}
+
+.rolebar .navbar-collapse a:hover{
+	color:#109877;
+	background-color: white;
+	padding-left: 22px;
+}
+
+.rolebar .navbar-collapse a:focus{
+	color:#109877;
+	background-color: white;
+}
+.rolebar{
+	position: absolute;
+}
+
+.btn-primary {
+    color: #109877;
+    background-color: white;
+    border-color: #109877;
+    border-radius: 50px;
+
+}
+.btn-primary:hover{
+    color: white;
+    background-color: #109877;
+    border-color: #109877;
+
+
+}
+
+.btn-primary.active, .btn-primary:active, .open>.dropdown-toggle.btn-primary {
+    color: #109877;
+    background-color: white;
+    border-color: #109877;
+    position: relative;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.dropdown-toggle.btn-primary.focus, .open>.dropdown-toggle.btn-primary:focus, .open>.dropdown-toggle.btn-primary:hover {
+   color: white;
+    background-color: #109877;
+    border-color: #109877;;
+}
+.btn-primary:active{
+    color: white;
+    background-color: #109877;
+    border-color: #109877;
+
+
+}
+.dropdown{
+	position: absolute;
+}
+.dropdown-menu li a:hover{
+   color: white;
+    background-color: #109877;
+}
+
+.btn-primary:focus{
+   color: #109877;
+    background-color: white;
+    border-color: #109877;
+
+
+}
+/* ---------------------------------- */
+
+
+/* LOGIN */
+
+.loginPage {
+	width: 360px;
+	padding: 10% 0 0;
+	margin: auto;
+}
+
+#logo {
+	max-width: 50%;
+}
+
+.form {
+	position: relative;
+	z-index: 1;
+	background: #FFFFFF;
+	max-width: 360px;
+	margin: 0 auto auto;
+	padding: 45px;
+	text-align: center;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+	outline: 0;
+	background: #f2f2f2;
+	width: 100%;
+	border: 0;
+	margin: 15px 0 15px;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+
+.form button {
+	text-transform: uppercase;
+	outline: 0;
+	width: 45%;
+	border: 0;
+	margin: 15px 5px 0;
+	padding: 15px;
+	color: #FFFFFF;
+	cursor: pointer;
+	display: inline-block;
+}
+
+#login {
+	background: #109877;
+}
+
+#pt {
+	background: #FF0000;
+}
+
+
+/* ---------------------------------- */
+
+
+/*Baseline*/
+
+.row.content {
+	height: 100%;
+}
+
+.sidenavL {
+	text-align: center;
+	padding-top: 10px;
+	background-color: #109877;
+	height: 100%;
+	border-right: solid #000000;
+}
+.sidenavLscore {
+	text-align: center;
+	padding-top: 10px;
+	background-color: #109877;
+	height: 140%;
+	border-right: solid #000000;
+}
+
+.sidenavLproject {
+	text-align: center;
+	padding-top: 10px;
+	background-color: #109877;
+	height: 272%;
+	border-right: solid #000000;
+}
+
+.userCol {
+	width: 100%;
+	height: 100%;
+	background-color:#109877;
+}
+
+.userInfo {
+	margin: 0;
+}
+
+.user {
+	cursor: pointer;
+	color: inherit;
+	text-decoration: inherit;
+}
+
+#avatar {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	margin-top: 30px;
+}
+
+h2{
+	color:#109877;
+	font-weight: 300;
+}
+
+h4{
+  color:#109877;
+}
+.userLogout {
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+}
+
+.btn-info {
+	/* botao de logout - deixar !important para sobrepor bootstrap*/
+	background-color: white !important;
+	color:#109877;
+	border-color: #10987 !important;
+	padding: 4px 10px !important;
+	font-size: 14px !important;
+}
+
+.centerContent {
+	padding-top: 10px;
+	height: 100%;
+    background-color: white;
+}
+
+.centerContentscore {
+	padding-top: 10px;
+	height: 100%;
+    background-color: white;
+}
+.centerCol {
+	width: 100%;
+	height: 100%;
+}
+
+.centerColscore {
+	width: 100%;
+	height: 140%;
+	background-color: white;
+}
+
+.header {
+	margin-top: -10px;
+}
+
+.nameDate {
+	display: flex;
+}
+
+.projectLink {
+	width: 50%;
+	color: inherit;
+	text-decoration: inherit;
+	cursor: pointer;
+}
+
+#project {
+	margin-top: 10px;
+	text-align: left;
+	font-size: 2.5vw;
+	font-style: bold;
+}
+
+#date {
+	color:white;
+	font-size: 1.5vw;
+	width: 50%;
+	text-align: center;
+	margin-top: 15px;
+	display:block;
+	color:white;
+	padding-top: 2px;
+	background-color: #109877;
+	background-opacity:50%;
+	border-radius: 50px;
+}
+
+.alerts {
+	margin-top: -10px;
+	display: flex;
+}
+
+#alertsH {
+	/*visibility: hidden;*/
+	margin-top: 10px;
+	width: 60%;
+	font-size: 2vw;
+	color: #109877;
+}
+
+#weekN {
+	font-size: 2vw;
+	width: 40%;
+	margin-top: 15px;
+	text-align: right;
+}
+
+.navbar.navbar-inverse {
+	background-color: white;
+	border-color:  #109877;
+	border-radius: 50px;
+}
+
+.navbar.navbar-inverse .navbar-toggle > span {
+	background-color: #109877;
+}
+
+.navbar.navbar-inverse .navbar-toggle:hover,
+.navbar.navbar-inverse .navbar-toggle:focus {
+	background-color: white;
+}
+
+.navbar.navbar-inverse .navbar-nav > li > a {
+	color:  #109877;
+}
+
+.navbar.navbar-inverse .navbar-nav > li.active > a {
+	color: white;
+}
+
+.navbar.navbar-inverse .navbar-nav > li > a:hover {
+	color: white;
+	background-color: #109877;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {
+    color: #fff;
+    background-color: #109877;
+}
+
+.contentI {
+	height: 75%;
+
+}
+
+#rolesmenu{
+    display: none;
+}
+
+.role{
+	color: #109877;
+	padding-top: 40px;
+
+}
+
+#member{
+   color: #109877;
+}
+
+.members{
+	position: absolute;
+	padding-top: 40px;
+	color: #109877;
+
+}
+
+.formboxes form{
+	padding-top: 80px;
+	font-size: 22px;
+}
+
+.droproles{
+
+	position: absolute;
+	left:-30px;
+	padding-top: 20px;
+}
+.change{
+	position: absolute;
+	top:500px;
+}
+
+
+.members li{
+	list-style-type: none;
+	margin-left: -32px;
+	font-size: 18px;
+	margin-top:20px;
+}
+
+
+.sidenavR {
+	text-align: left;
+	padding-top: 10px;
+	background-color: #109877;
+	height: 100%;
+	border-left: solid #000000;
+}
+.sidenavRscore {
+	text-align: left;
+	padding-top: 10px;
+	background-color: #109877;
+	height: 140%;
+	border-left: solid #000000;
+}
+
+.sidenavRproject {
+	text-align: left;
+	padding-top: 10px;
+	background-color: #109877;
+	height: 272%;
+	border-left: solid #000000;
+}
+
+.scorecard h1{
+  color: #109877;
+
+}
+
+.scorecard h4{
+  padding-top: 10px;
+    border: 1px solid #109877;
+    border-radius: 50px;
+    padding-top:-15px;
+    margin-left: 30px
+}
+
+.plus-or-minus{
+  font-size: 30px;
+  color: #109877;
+  display: inline;
+  margin-left: 10px;
+}
+
+.plus-or-minus:hover{
+  text-decoration-color: #109877;
+}
+
+.topic{
+	display: inline-block;
+	font-weight: bold;
+}
+
+.question{
+	display: inline-block;
+}
+
+#weeklyscore{
+  margin-top: 65px;
+  display:none;
+}
+
+#scorecardgraph{
+  margin-top: 100px;
+  display: none;
+}
+
+#Buttons{
+    margin-top: 2.5%
+}
+
+@media screen and (max-width: 767px) {
+	.sidenavL {
+		height: auto;
+		padding: 15px;
+	}
+	.sidenavR {
+        position: relative;
+		height: auto;
+		padding: 15px;
+	}
+	.row.content {
+		height: auto;
+	}
+	.userLogout {
+		bottom: 10px;
+		left: 10px;
+		text-align: left;
+	}
+	   .navbar.navbar-inverse {
+    background-color: white;
+    border-color: white;
+    border-radius: 50px;
+
+    }
+
+    .rolebar .navbar-collapse a {
+    color: #109877;
+    padding-left: 0px;
+    }
+    .rolebar .navbar-collapse {
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    margin-left: -5px;
+    padding-right: 60px;
+ }
+   .scorecardminado{
+   	padding-top: 110px;
+   }
+
+    #pathFiles {
+    position: relative;
+    top: 30px;
+  }
+
+    .teste li{
+    	padding-top: 30px;
+    }
+
+    .btn-info {
+    position: absolute;
+    top:-160px;
+   }
+   .sidenavRscore {
+        opacity:0;
+	}
+	.rolebar .navbar-collapse a:hover{
+	color:#075643;
+	background-color:white;
+	border-bottom: 1px solid #075643;
+}
+
+#member{
+   color: #109877;
+   font-size:18px;
+}
+.scorecard h1 {
+    color: #109877;
+    font-size: 18px;
+}
+.scorecard h4 {
+    font-size: 12px;
+    padding-left: 15px;
+    border-bottom: 2px solid #109877;
+    border-left: 1px solid #109877;
+    border-radius: 50px;
+
+}
+.topic{
+	font-size: 14px;
+	font-weight: bold;
+}
+.formboxes form {
+    padding-top: 130px;
+    font-size: 15px;
+}
+
+
+.rolebar .navbar-collapse a:focus{
+	color:#075643;
+	background-color: white;
+	border-bottom: 1px solid #075643;
+}
+ #project {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 4.5vw;
+    font-style: bold;
+}
+
+#alertsH {
+    /* visibility: hidden; */
+    margin-top: 10px;
+    width: 60%;
+    font-size: 4.5vw;
+    color: #109877;
+}
+
+#date {
+    color: white;
+    font-size: 2.7vw;
+    width: 50%;
+    text-align: center;
+    margin-top: 15px;
+    display: block;
+    color: white;
+    padding-top: 2px;
+    background-color: #109877;
+    background-opacity: 50%;
+    border-radius: 50px;
+}
+
+.btn-primary {
+    color: white;
+    background-color: #109877;
+    border-color: #109877;
+    position:absolute;
+    top:75px;
+}
+
+}
+
+button div p:first-child {
+    font-size: 2.5em !important;
+    width: 100%;
+    padding-left: 2%;
+}
+
+/* ---------------------------------- */
+
+
+/*lista*/
+
+#list {
+	height: auto;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	overflow: none;
+	text-align: center;
+}
+.proj {
+   background-color:white;
+   border:1px solid #109877;
+   border-radius: 50px;
+   padding-top:5px;
+   border-top:0px;
+   border-right:0px;
+   border-left:0px;
+}
+
+.proj p{
+   color:#109877;
+}
+
+button div p:nth-child(2) {
+    font-size: 0.9em !important;
+    color: #0d8265 !important;
+    width: 49%;
+    float: right;
+    text-align: right;
+    padding-right: 2%;
+}
+/* ---------------------------------- */
+
+#divArtifacts {
+	max-height: inherit;
+}
+
+
+/*Files*/
+
+#listFiles {
+	max-height: inherit;
+	padding: 0;
+	margin: 0;
+	overflow-x: auto;
+	overflow-y: visible;
+	display: -webkit-box;
+}
+
+#pathFiles {
+	height: 3%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: -webkit-box;
+}
+
+/*COMMITS*/
+
+.description{
+    font-size: 1vw;
+    margin: 0 0 0;
+}
+.last_act{
+    margin: 0;
+    width: 50%;
+    font-size: 1vw;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    text-align: right;
+}
+.proj{
+  font-size: 1vw;
+  width: 50%;
+  text-align: left;
+}
+
+.txt {
+	color: #109877;
+}
+
+.btn3{
+  width: 100%;
+  background-color: white;
+  border-style: none;
+  outline: 0;
+  display: flex;
+  margin: 5px 2px;
+  position: relative;
+}
+
+
+
+button div{
+	width: 100% !important;
+    margin-top: 1%;
+}
+button div p:first-child{
+	font-size: 1.5em !important;
+	width: 100%;
+	padding-left: 2%;
+}
+button div p:first-child:hover{
+	text-decoration: underline;
+}
+button div p:nth-child(2){
+	font-size: 0.9em !important;
+    color: #109877;
+	width: 49%;
+	float: right;
+	text-align: right;
+	padding-right: 2%;
+}

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "944770057424",
+    "project_id": "opticanvas-26d78"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944770057424:android:631bfbc098401d4c",
+        "android_client_info": {
+          "package_name": "com.Opti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944770057424-trfvj2kt2a8i334a3vmh7pk8k7j7atsg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.Opti",
+            "certificate_hash": "4ADACD25A34F7C20091CDE445B947E41995D0D2A"
+          }
+        },
+        {
+          "client_id": "944770057424-vjrbc2ks0fkon3mnp86otlkvdu5kj6uc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPw2OJ5k5KsryIF7Uc5d_hMJIciWM-6X0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

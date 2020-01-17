@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ES Project - Login</title>
+	<meta charset="UTF-8">
+	<link href='../style.css' rel='stylesheet'>
+	<script src="../javascript/login.js"></script>
+    <script src="../javascript/roles.js"></script>
+</head>
+
+<body onload="alreadyLogged();">
+	<div class="loginPage">
+		<div class="form"> <img id="logo" src="../imgs/logocinzentos.png">
+			<form action="javascript:sessionStart()">
+				<input type="text" placeholder="username" id="uname" required/>
+				<input type="password" placeholder="password" id="psw" required />
+				<button type="submit" id="login">Login</button>
+			</form>
+		</div>
+	</div>
+</body>
+
+</html>

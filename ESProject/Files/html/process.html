@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+		<title>ES Project - Home</title>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href='../style.css' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,700" rel="stylesheet">
+    <script src="../javascript/roles.js"></script>
+	<script src="../includes/canvasjs.min.js"></script>
+	<script src="../javascript/loadContent.js"></script>
+	<script src="../javascript/scorecard.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="startContent()">
+	<div class="container-fluid">
+		<div class="row content">
+			<div class="col-sm-2 sidenavLscore">
+				<div class="userCol">
+					<div class="userInfo">
+						<a href="#" class="user"> <img id="avatar">
+							<p id=name></p>
+						</a>
+					</div>
+					<div class="userLogout">
+						<a href="javascript:logOut()" class="btn btn-info btn-lg"> <span class="glyphicon glyphicon-log-out"></span> Log out </a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8 centerContentscore">
+				<div class="centerColscore">
+					<div class="header">
+						<div class="nameDate"> <a href="project.html" class="projectLink"><h2 id="project"></h2></a>
+							<p id="date"></p>
+						</div>
+						<div class="alerts">
+							<h3 id="alertsH"></h3>
+							<h4 id="weekN"></h4> </div>
+						<div class="navbarDiv">
+							<nav class="navbar navbar-inverse">
+								<div class="container-fluid">
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+									    <img src="../imgs/edgesoft.png" style="width:60px; margin-left: 15px;
+									    position:relative; top:15px;" >
+									</div>
+									<div class="collapse navbar-collapse" id="myNavbar">
+										<ul class="nav navbar-nav">
+											<li><a href="project.html">Project</a></li>
+											<li><a href="work.html">Work</a></li>
+											<li><a href="artifacts.html">Artifacts</a></li>
+											<li class="active"><a href="process.html">Process</a></li>
+											<li><a href="people.html">People</a></li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+						</div>
+					</div>
+
+                    					<div class="rolebar col-md-7 col-md-push-2 col-xs-11 col-xs-push-1">
+														 	<nav class="navbar navbar-collapse">
+														 	<ul class="nav navbar-nav ">
+														 	<li><a href="#">Risks</a></li>
+														 	<li><a href="#">Process Management</a></li>
+
+														 	<li><a href="javascript:showRolesMenu()">Roles</a></li>
+														 	<li><a href="#">Tasks</a></li>
+														 	<li><a href="javascript:;startScorecardGraph()">Score Card</a></li>
+														 	</ul>
+							 								</nav>
+				    					</div>
+                                        <div class="scorecardminado">
+                                    	    <div class="contentI" id="scorecardgraph">
+											<div id="Graphs"></div>
+											<div id="Buttons"></div>
+											<div id="Table"></div>
+										</div>
+										</div>
+
+	                           <div class="contentI" id="rolesmenu">
+					                 <!--<div class="col-xs-4 role">
+
+										<div class="dropdown col-xs-5 droproles">
+  										<button class="btn btn-primary dropdown-toggle " style="margin-left:30px;" type="button" data-toggle="dropdown">Members
+						 				 <span class="caret"></span></button>
+										  <ul class="dropdown-menu">
+						  				  <li><a class="member-name" href="#">Henrique</a></li>
+						   				 <li><a class="member-name"href="#">Joel</a></li>
+						    			<li><a class="member-name"href="#">Costa</a></li>
+						    			<li><a class="member-name"href="#">André</a></li>
+						    			<li><a class="member-name"href="#">Pinto</a></li>
+						    			<li><a class="member-name"href="#">Diana</a></li>
+						    			<li><a class="member-name"href="#">Ferreiro</a></li>
+  										</ul>
+								       </div>
+
+                                            <div class="formboxes">
+										    <form>
+										 	<input type="checkbox" name="roles" value="Scrum Master">Scrum Master<br>
+											<input type="checkbox" name="roles" value="Integration Manager">Integration Manager<br>
+											<input type="checkbox" name="roles" value="Integration Manager">Risk Manager<br>
+											<input type="checkbox" name="roles" value="Integration Manager">Product Owner
+											</form>
+											</div>
+
+									</div>
+
+                               <div  class="col-xs-4 col-xs-push-9 change">
+                                <button class="btn btn-primary " type="button" data-toggle="dropdown">Change</button>
+						  </div>-->
+                    </div>
+
+					<div class="contentI" id="weeklyscore">
+
+							<!--<div class="col-xs-6 scorecard">
+								<h1>Weekly Scorecard</h1>
+                                <h4>Do you feel part of a cooperative team?</h4>
+                                <h4>Did you hit the weekly milestone objetice?</h4>
+                                <h4>Do you feel insecure with the technolagy being used?</h4>
+								</div>-->
+								<!--<div class="plus-or-minus col-md-1 col-md-push-4">
+								<a>-</a>
+								</div>
+								<div class="plus-or-minus col-md-1 col-md-push-4">
+                                <a>+</a>
+								</div>-->
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-2 sidenavRscore">
+				<p id="feed">FEED</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

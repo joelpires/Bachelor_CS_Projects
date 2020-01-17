@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>ES Project - Home</title>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link href='../style.css' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css?family=Catamaran:300,400,700" rel="stylesheet">
+	<script src="../javascript/home.js"></script>
+	<script src="../javascript/loadContent.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body onload="startContent()">
+	<div class="container-fluid">
+		<div class="row content">
+			<div class="col-sm-2 sidenavL">
+				<div class="userCol">
+					<div class="userInfo">
+						<a href="#" class="user"> <img id="avatar">
+							<p id=name></p>
+						</a>
+					</div>
+					<div class="userLogout">
+						<a href="javascript:logOut()" class="btn btn-info btn-lg"> <span class="glyphicon glyphicon-log-out"></span> Log out </a>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-8 centerContent">
+				<div class="centerCol">
+					<div class="header">
+						<div class="nameDate"> <a href="project.html" class="projectLink"><h2 id="project"></h2></a>
+							<p id="date"></p>
+						</div>
+						<div class="alerts">
+							<h3 id="alertsH"></h3>
+							<h4 id="weekN"></h4> </div>
+						<div class="navbarDiv">
+							<nav class="navbar navbar-inverse">
+								<div class="container-fluid">
+									<div class="navbar-header">
+										<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+									    <img src="../imgs/edgesoft.png" style="width:60px; margin-left: 15px; 
+									    position:relative; top:15px;" >
+									</div>
+									<div class="collapse navbar-collapse" id="myNavbar">
+										<ul class="nav navbar-nav">
+											<li><a href="project.html">Project</a></li>
+											<li class="active"><a href="work.html">Work</a></li>
+											<li><a href="artifacts.html">Artifacts</a></li>
+											<li><a href="process.html">Process</a></li>
+											<li><a href="people.html">People</a></li>
+										</ul>
+									</div>
+								</div>
+							</nav>
+						</div>
+					</div>
+					<div class="contentI"> </div>
+				</div>
+			</div>
+			<div class="col-sm-2 sidenavR">
+				<p id="feed">FEED</p>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

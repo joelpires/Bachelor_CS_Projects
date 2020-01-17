@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#4dc3ff"
+    android:id="@+id/ll">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#80000000">
+
+        <ImageView
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/opticanvaslogo"
+            android:id="@+id/imageView3"
+            android:contentDescription=""
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="@string/opticanvas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/menuSpinner"
+            android:background="@color/dark"
+            android:layout_weight="0.27" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:text="@string/calend_rio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:textStyle="normal|bold"
+                android:typeface="sans"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_marginLeft="30dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="342dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:orientation="vertical" >
+
+                    <CalendarView
+                        android:background="@android:color/background_light"
+                        android:id="@+id/calendar"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:layout_height="match_parent"
+                        android:layout_width="match_parent" />
+                </LinearLayout>
+            </ScrollView>
+
+            <ScrollView
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/listEvents">
+
+                    <LinearLayout
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:id="@+id/event1"
+                        android:layout_height="60dp">
+
+                        <ImageView
+                            android:layout_margin="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/time"
+                            android:id="@+id/imageView5" />
+
+                        <LinearLayout
+                            android:layout_margin="7dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/info">
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/nomeEvento1"
+                                android:layout_weight="1"
+                                android:textStyle="normal|bold"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/dataEvento1"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:layout_marginTop="7dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/more"
+                            android:id="@+id/more1"
+                            android:background="@android:color/transparent" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:id="@+id/event2">
+
+                        <ImageView
+                            android:layout_margin="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/time"
+                            android:id="@+id/imageView6" />
+
+                        <LinearLayout
+                            android:layout_margin="7dp"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:id="@+id/info2">
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/nomeEvento2"
+                                android:layout_weight="1"
+                                android:textColor="@color/black"
+                                android:textStyle="normal|bold"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:text="TextView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/dataEvento2"
+                                android:layout_weight="1" />
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:layout_margin="7dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/more"
+                            android:id="@+id/more2"
+                            android:background="@android:color/transparent" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/add"
+        android:id="@+id/novoEventoBtn"
+        android:background="@android:color/transparent" />
+
+
+</LinearLayout>
+

@@ -1,0 +1,513 @@
+\documentclass[12pt]{article}
+
+\usepackage{pictex}
+\usepackage{multirow}
+\usepackage{color}
+\usepackage[pdftex]{graphicx}
+\usepackage{fancyhdr}
+\usepackage[portuguese]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{xcolor,colortbl}
+\usepackage{placeins}
+\usepackage{verbatim}
+\usepackage{geometry}
+\usepackage{lscape}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{times}
+\usepackage{afterpage}
+\usepackage{hyperref}
+
+
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.2mm}}
+
+
+ \geometry{
+ total={210mm,297mm},
+ left=30mm,
+ right=30mm,
+ top=30mm,
+ bottom=30mm,
+ }
+ 
+ \pagestyle{fancy}
+\fancyhf{}
+\lhead{\footnotesize Software Requirements Specification para Web dashboard para o git}
+\rhead{\footnotesize 30 de Setembro de 2016}
+\lfoot{}
+\cfoot{\footnotesize Página \thepage}
+\rfoot{}
+ 
+ 
+ 
+\begin{document} 
+\begin{titlepage}
+\begin{center}
+
+\textsc{\footnotesize Universidade de Coimbra }\\[0.1cm]
+\textsc{\footnotesize Faculdade de Ciências e Tecnologias}  \\[0.1cm]
+\textsc{\footnotesize Departamento de Engenharia Informática }\\[0.2cm]
+\textsc{\footnotesize Engenharia de Software }\\[2cm]
+
+
+
+
+{\Large \bfseries Software Requirements Specification\\[1.5cm]
+
+\textsc{\normalsize Version 1}\\[.2cm]
+\textsc{\normalsize Web Dashboard para o Git}\\[2cm]
+\textsc{\fontsize{2cm}{2.5cm}\selectfont EdgeSoft}\\[5cm]
+
+
+\small
+André Duarte \hfill 2014214845\\ 
+Diana Pereira \hfill 2013150712\\
+Gonçalo Pinto \hfill 2014202176\\
+Henrique Pereira \hfill 2011154576\\
+João Costa \hfill 2013144034\\
+João Ferreiro \hfill 2014197760\\
+Joel Pires \hfill 2014195242\\
+
+
+
+\begin{minipage}{0\textwidth}
+\begin{flushright} \large
+\end{flushright}
+\end{minipage}
+
+\vfill
+{\normalsize 30 de Setembro de 2016}
+}
+
+\end{center}
+\end{titlepage}
+
+
+\pagebreak
+
+\tableofcontents
+
+\pagebreak
+
+\section{ \textsc{Introdução}}
+
+\subsection{ \textsc{Objectivo}}
+Este documento especifica os requisitos de software para todo o sistema de uma web dashboard do Git que funcione como mentor e guia virtual de projetos guardados no repositório do DEI (https://git.dei.uc.pt.).
+
+\subsection{ \textsc{Convenções do Documento}}
+\textbf{Titulo}
+Font: Helvetica Neue
+Face: Bold
+Size: 25
+
+\textbf{Sub-títulos}
+Font: Helvetica Neue
+Face: Bold
+Size: 12
+
+\textbf{Outro Texto}
+Font: Helvetica Neue
+Size: 11
+
+\subsection{ \textsc{Público-alvo e sugestões de leitura}}
+Pretende-se que o presente documento seja lido pelos desenvolvedores do software, por testers e pelo cliente.
+
+\subsection{ \textsc{Âmbito do Projecto}}
+Este projeto consiste numa web dashboard do Git capaz de listar os vários documentos, elaborar estatísticas, executar tarefas, processos e outros artefactos relativos a um projecto alojado na plataforma do Gitlab, de forma a servir de mentor e ajuda a quem está a desenvolver. Esse mentor, consoante os requisitos e processos que a equipa quer usar, é capaz de sugerir tarefas a realizar, estimar tempos, boas práticas de programação, aconselhar determinada decisão a tomar, avaliar o desempenho de cada membro e a qualidade do projecto. No entanto, tal mentor não deve ser de uso obrigatório. O objetivo é ajudar uma equipa a estar consciente de todos os aspetos do seu projeto de modo a garantir um bom progresso.
+
+\subsection{ \textsc{Referências}}
+\begin{itemize}
+\item Documento de especificação de requisitos de software
+\item Material fornecido pelo docente da cadeira: IEEE Software Requirements Specification Template 
+\end{itemize}
+
+\pagebreak
+
+\section{ \textsc{Descrição Geral}}
+\subsection{ \textsc{Perspectiva do Produto}}
+O projecto surge no âmbito da disciplina de Engenharia de Software, que faz parte dos cursos de Engenharia Informática e Design e Multimédia. Ao tratar-se de uma aplicação capaz de analisar as várias componente de projectos num repositório Git do DEI, servirá para melhorar os seus desenvolvimentos pelas equipas que usem este produto
+
+\subsection{ \textsc{Funções do Produto}}
+Providencia Informações Relativas ao Projeto:
+\begin{itemize}
+\item Hierarquia de Ficheiros
+\item Membros da Equipa
+\item Contribuintes para o Projeto
+\item Linguagens de Programação Presentes
+\item Tamanho do Projeto
+\item Informação sobre Forks
+\item Informação sobre Pull Requests
+\item Informação sobre Commits
+\item Informação sobre Inserções/Deleções
+\item Informação sobre Issues
+\item Informação sobre Branches
+\item Informação sobre Releases
+\item Informação sobre Followers
+\item Informação sobre Stargazers
+\item Informação sobre Downloads
+\item Informação sobre Comentários
+\end{itemize}
+
+\pagebreak
+
+Providência Estatísticas Relativas ao Projeto:
+\begin{itemize}
+\item Visão temporal das atividades (quantidade de commits, pull requests,etc) de cada membro
+\item Comparação dessas atividades entre os membros da equipa
+\item Visão temporal das atividades (quantidade total de commits, pull requests, etc) do projeto
+\item Comparação entre várias referências temporais das atividades do projeto
+\item Análise do tempo gasto para metas e para o projeto na sua íntegra,  quer por ada membro da equipa quer a totalidade da equipa
+\end{itemize}
+
+\hfill \linebreak
+
+rovidência supervisionamento do projeto (mentor do projeto):
+\begin{itemize}
+\item sugere tarefas a realizar
+\item prioriza e agenda tarefas a realizar
+\item aconselha boas práticas de programação
+\item aconselha sobre decisões que são precisas tomar
+\item lança alertas dependendo da urgência das metas
+\item faz controle do tempo gasto e disponível para as metas a atingir
+\end{itemize}
+
+Dispõe de Opções de configuração e Preferências do Utilizador
+\begin{itemize}
+\item autêntica membro do projeto por meio de um sistema de log in
+\item mentor do projeto é configurável 
+\item é possível adicionar processo usado pela equipa
+\item modificar perfil dos membros
+\end{itemize}
+
+\subsection{ \textsc{Classes de Utilizador e Características}}
+A aplicação destina-se apenas utilizadores do repositório Git do DEI, os quais devem fazer parte de uma equipa a desenvolver um projecto nesse mesmo repositório
+
+\subsection{ \textsc{Ambiente Operacional}}
+Este projeto vai ser operacional em qualquer sistema operativo e browser
+
+\pagebreak
+
+\section{ \textsc{Funcionalidades do Sistema}}
+\subsection{ \textsc{Navegar pela hierarquia do projeto}}
+
+\begin{center}
+\begin{tabular}{ | m{4cm} | m{10cm} | } 
+\hline
+ID Caso de Uso & 1.1 \\
+\hline
+Nome & Navegar pela hierarquia do projecto\\
+\hline
+Descrição & O utilizador pode ver a listagem ou aceder todos os ficheiros e pastas do projeto do repositório git\\
+\hline
+Pré-Requesitos & O utilizador deve estar autenticado\\
+\hline
+Pós-Requesitos & É mostrada uma interface com a listagem do conteúdo do projecto (directoria ou conteúdo do ficheiro)\\
+\hline
+Caso de Falha & O utilizador não consegue visualizar o conteúdo do projecto\\
+\hline
+Actor & Operador\\
+\hline
+Desencadeado & O utilizador tem que escolher a opção Ficheiros\\
+\hline
+\end{tabular}
+\end{center}
+
+
+\subsection{ \textsc{Informações gerais do Projeto}}
+
+\begin{center}
+\begin{tabular}{ | m{4cm} | m{10cm} | } 
+\hline
+ID Caso de Uso & 1.2 \\
+\hline
+Nome & Informações gerais do Projeto\\
+\hline
+Descrição & É possível ao utilizador ter acesso a todas as informações relativamente ao projecto (commits, branches, pull requests, Inserções/Deleções, Releases, ...)\\
+\hline
+Pré-Requesitos & O utilizador deve-se encontrar autenticado\\
+\hline
+Pós-Requesitos & Uma listagem da informação em relação aos vários tópicos referidos em cima\\
+\hline
+Caso de Falha & O utilizador não consegue visualizar as informações gerais do projecto\\
+\hline
+Actor & Operador\\
+\hline
+Desencadeado & O utilizador escolhe a opção Projecto\\
+\hline
+\end{tabular}
+\end{center}
+
+
+\subsection{ \textsc{Informações gerais sobre Membros da Equipa}}
+
+\begin{center}
+\begin{tabular}{ | m{4cm} | m{10cm} | } 
+\hline
+ID Caso de Uso & 1.3\\
+\hline
+Nome & Informações gerais sobre Membros da Equipa\\
+\hline
+Descrição & Obter os dados relativamente ao nome, foto, idade
+ e curso de cada membro \\
+\hline
+Pré-Requesitos & Estar autenticado como membro da equipa\\
+\hline
+Pós-Requesitos & É mostrada uma interface com a informação de
+ cada um dos membros da equipa\\
+\hline
+Caso de Falha & O utilizador não consegue ver alguns ou
+ todos os membros da equipa\\
+\hline
+Actor & Operador\\
+\hline
+Desencadeado & O utilizador escolhe a opção Membros \\
+\hline
+\end{tabular}
+\end{center}
+
+
+\subsection{ \textsc{Estatísticas sobre Atividade no Projeto}}
+
+\begin{center}
+\begin{tabular}{ | m{4cm} | m{10cm} | } 
+\hline
+ID Caso de Uso & 1.4\\
+\hline
+Nome & Estatísticas sobre Atividade no Projeto\\
+\hline
+Descrição & 
+É possível ao utilizador consultar as estatísticas do projecto, ao longo de todo o curso do mesmo, em relação às informações gerais do projecto entre os vários membros
+\\
+\hline
+Pré-Requesitos & O utilizador deve estar autenticado\\
+\hline
+Pós-Requesitos & É apresentada a informação em relação às várias estatísticas do projecto \\
+\hline
+Caso de Falha & A informação em relação às estatísticas não é apresentada\\
+\hline
+Actor & Operador\\
+\hline
+Desencadeado & O utilizador escolhe a opção de estatísticas no menu\\
+\hline
+\end{tabular}
+\end{center}
+
+
+\subsection{ \textsc{Estatísticas sobre Tempo Gasto no Projeto}}
+
+\begin{center}
+\begin{tabular}{ | m{4cm} | m{10cm} | } 
+\hline
+ID Caso de Uso & 1.5\\
+\hline
+Nome & Estatísticas sobre Tempo Gasto no Projeto\\
+\hline
+Descrição & Obter os dados relativamente ao tempo gasto de todos os membros na realização do projecto \\
+\hline
+Pré-Requesitos & O utilizador deve estar autenticado como membro da equipa\\
+\hline
+Pós-Requesitos & É mostrada uma interface com a informação do tempo gasto no projeto pelos membros do grupo\\
+\hline
+Caso de Falha & A informação em relação ao tempo gasto no projecto não é apresentada\\
+\hline
+Actor & Operador\\
+\hline
+Desencadeado & O utilizador escolhe a opção de estatísticas no menu\\
+\hline
+\end{tabular}
+\end{center}
+------------------------------
+
+\subsection{ \textsc{Controle do Tempo Gasto}}
+
+\begin{center}
+\begin{tabular}{ | m{4cm} | m{10cm} | } 
+\hline
+ID Caso de Uso & 1.6\\
+\hline
+Nome & Controle do Tempo Gasto\\
+\hline
+Descrição & Obter a informação relativamente ao budget temporal do utilizador\\
+\hline
+Pré-Requesitos & O utilizador tem de estar autenticado\\
+\hline
+Pós-Requesitos & É apresentada informação em relação ao budget (budget total, budget usado por semana, …)\\
+\hline
+Caso de Falha & A informação em relação ao budget temporal do projecto não é apresentada\\
+\hline
+Actor & Sistema\\
+\hline
+Desencadeado & O utilizador carrega no seu avatar no menu lateral esquerdo\\
+\hline
+\end{tabular}
+\end{center}
+
+
+\subsection{ \textsc{Autenticação de Utilizadores}}
+
+\begin{center}
+\begin{tabular}{ | m{4cm} | m{10cm} | } 
+\hline
+ID Caso de Uso & 1.7\\
+\hline
+Nome & Autenticação de Utilizadores\\
+\hline
+Descrição & O utilizador pode introduzir o seu Token privado da API do git do DEI para aceder às funcionalidades da dashboard\\
+\hline
+Pré-Requesitos & O utilizador deve estar autenticado\\
+\hline
+Pós-Requesitos & Mostrar o menu incial da dashboard\\
+\hline
+Caso de Falha & O utilzador não consegue usar as funcionalidade da dashboard\\
+\hline
+Actor & Operador\\
+\hline
+Desencadeado & O utilizador tem que escolher a opção Conectar\\
+\hline
+\end{tabular}
+\end{center}
+
+
+\subsection{ \textsc{Armazenamento das Preferências e Configurações do Utilizador}}
+
+\begin{center}
+\begin{tabular}{ | m{4cm} | m{10cm} | } 
+\hline
+ID Caso de Uso & 1.8\\
+\hline
+Nome & Armazenamento das Preferências e Configurações do Utilizador\\
+\hline
+Descrição & O utilizador pode alterar diversas opções pessoas da forma como a dashboard deve funcionar\\
+\hline
+Pré-Requesitos & O utilizador deve estar autenticado\\
+\hline
+Pós-Requesitos & Mostrar as opções alteradas e o seu sucesso\\
+\hline
+Caso de Falha & O utilizador não consegue mudar as sua opções preferenciais\\
+\hline
+Actor & Operador\\
+\hline
+Desencadeado & O utilizador tem que escolher a opção Preferências\\
+\hline
+\end{tabular}
+\end{center}
+
+
+\subsection{ \textsc{Priorização e agendamento de tarefas/metas a realizar}}
+
+\begin{center}
+\begin{tabular}{ | m{4cm} | m{10cm} | } 
+\hline
+ID Caso de Uso & 1.9\\
+\hline
+Nome & Priorização e agendamento de tarefas/metas a realizar\\
+\hline
+Descrição & A informação em relação ao agendamento semanal de tarefas e a prioridade das mesmas é apresentada ao utilizador\\
+\hline
+Pré-Requesitos & O utilizador deve estar autenticado\\
+\hline
+Pós-Requesitos & É apresentada a informação ao utilizador na página inicial do projecto\\
+\hline
+Caso de Falha & Não apresentação da informação relativa ao agendamento\\
+\hline
+Actor & Sistema\\
+\hline
+Desencadeado & É apresentado ao utilizador na página inicial do projecto\\
+\hline
+\end{tabular}
+\end{center}
+
+
+\subsection{ \textsc{Lançamento de alertas}}
+
+\begin{center}
+\begin{tabular}{ | m{4cm} | m{10cm} | } 
+\hline
+ID Caso de Uso & 1.10\\
+\hline
+Nome & Lançamento de alertas\\
+\hline
+Descrição & Alertas sobre boas práticas de programação, decisões que são precisas tomar, avisos quando a deadline para determinada meta está a chegar (entre outras coisas), surgem no ecrã de forma oportuna\\
+\hline
+Pré-Requesitos & O utilizador deve estar autenticado\\
+\hline
+Pós-Requesitos & Alertas são apresentadas em forma de pop-up no decorrer do uso do software\\
+\hline
+Caso de Falha & Alertas não são lançados\\
+\hline
+Actor & Sistema\\
+\hline
+Desencadeado & É apresentado ao utilizador no decorrer do uso do software\\
+\hline
+\end{tabular}
+\end{center}
+
+
+\subsection{ \textsc{Configuração do Mentor}}
+
+\begin{center}
+\begin{tabular}{ | m{4cm} | m{10cm} | } 
+\hline
+ID Caso de Uso & 1.11\\
+\hline
+Nome & Configuração do Mentor\\
+\hline
+Descrição & O utilizador pode fornecer os requisitos do projecto assim como o modelo de processo a usar usado para o Sistema saber como deve ajudar a equipa\\
+\hline
+Pré-Requesitos & O utilizador deve estar autenticado\\
+\hline
+Pós-Requesitos & Mostra se o Sistema interpretou com sucesso as opções\\
+\hline
+Caso de Falha & O sistema não consegue dar alertas e sugerir dicas para o projecto\\
+\hline
+Actor & Operador\\
+\hline
+Desencadeado & O utilizador tem que escolher a opção Configurar Mentor\\
+\hline
+\end{tabular}
+\end{center}
+
+\pagebreak
+
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

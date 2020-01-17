@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/activity_main"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#4dc3ff">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#80000000">
+
+        <ImageView
+            android:layout_width="101dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/opticanvaslogo"
+            android:id="@+id/imageView3" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="OptiCanvas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_weight="1"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/menuSpinner"
+            android:background="@color/dark"
+            android:layout_weight="0.27" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@android:color/background_light"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="196dp"
+        android:weightSum="1"
+        android:layout_weight="0.10">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/idea"
+                android:id="@+id/idea" />
+
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:text="Dica do Dia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:layout_weight="1"
+                android:textStyle="normal|bold"
+                android:textColor="@android:color/black"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tip_of_day">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:text="TextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/tip_text"
+                        android:textAlignment="textStart"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginLeft="10dp"/>
+                </LinearLayout>
+            </ScrollView>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@android:color/background_light"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="300dp"
+        android:layout_height="134dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                app:srcCompat="@drawable/clock"
+                android:id="@+id/clock"
+                android:layout_height="40dp"
+                android:layout_width="40dp" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_weight="1"
+                android:textStyle="normal|bold"
+                android:layout_gravity="center"
+                android:text="Calendário"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="94dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/calendar" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">OptiCanvas</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_navigation_drawer">NavigationDrawer</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="new_event">Create new Event</string>
+    <string name="criar_novo_evento">Criar Novo Evento</string>
+    <string name="calend_rio">Calendário</string>
+    <string name="opticanvas">OptiCanvas</string>
+    <string name="go_back">Go Back</string>
+    <string name="novo_evento">Novo Evento</string>
+
+    <string name="tipo_de_evento">Tipo de Evento</string>
+    <string name="eventotype1">Consulta</string>
+    <string name="eventotype2">Rastreio</string>
+    <string name="data_evento">Data</string>
+
+    <string name="drawer_open">Menu aberto</string>
+
+    <string name="drawer_close">Menu fechado</string>
+
+    <string name="action_settings">Opções</string>
+
+
+</resources>

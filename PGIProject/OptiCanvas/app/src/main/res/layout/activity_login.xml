@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4dc3ff"
+    android:weightSum="1"
+    android:baselineAligned="false"
+    >
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:weightSum="1"
+        android:layout_weight="0.16">
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:text="OptiCanvas"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:id="@+id/textView4"
+            android:textStyle="normal|bold"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="151dp"
+        android:layout_weight="0.71">
+
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_width="55dp"
+            android:layout_height="215dp"
+            app:srcCompat="@drawable/opticanvaslogo"
+            android:id="@+id/imageView2"
+            android:layout_weight="0.77" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="151dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp">
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/btn_sign_in"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>
